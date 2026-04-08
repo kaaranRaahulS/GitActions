@@ -1,0 +1,10 @@
+name: Lint-Test-Run
+on: push 
+jobs:
+  Lint-First-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run Linting
+        run: echo "Running Linting..."
